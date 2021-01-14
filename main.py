@@ -20,8 +20,10 @@ if reply1 == "yes" or reply1 == "Yes" or reply1 == "Y" or reply1 == "y":
             sending = sender.send(message)
             print("sending succesfully..")
             print(sending.status_code)
-        except Exception as e:
+        except ValueError as e:
             print(e.message)
+            
+        
 elif reply1 == "N" or reply1 == "No" or reply1 == "no" or reply1 == "NO":
     print("exiting..")
 else:
