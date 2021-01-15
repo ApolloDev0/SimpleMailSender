@@ -2,7 +2,7 @@ import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-reply1 = str(input("would you like to said an email[y/n]: "))
+reply1 = str(input("would you like to send an email[y/n]: "))
 if reply1 == "yes" or reply1 == "Yes" or reply1 == "Y" or reply1 == "y":
     mail_sender = str(input("enter your mail: "))
     mail_reciever = str(input("enter your mail reciever: "))
